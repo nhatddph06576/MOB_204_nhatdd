@@ -10,8 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/app_name"
+            android:name=".WelcomeActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +18,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="Sign up"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:label="Change Password"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ThemSachActivity"
+            android:label="Thêm sách"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".UserActivity"
+            android:label="User"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HoaDonActivity"
+            android:label="Hóa Đơn"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".ThongKeActivity"></activity>
     </application>
 
 </manifest>
